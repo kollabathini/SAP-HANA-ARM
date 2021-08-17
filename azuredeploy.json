@@ -12,7 +12,8 @@
                 "SAP HANA PLATFORM EDITION 2.0 SPS01 REV 10 (51052030)",
                 "SAP HANA PLATFORM EDITION 2.0 SPS02 (51052325)",
                 "SAP HANA PLATFORM EDITION 2.0 SPS03 REV30 (51053061)",
-                "SAP HANA PLATFORM EDITION 2.0 SPS04 REV40 (51053787)"
+                "SAP HANA PLATFORM EDITION 2.0 SPS04 REV40 (51053787)",
+                "SAP HANA PLATFORM EDITION 2.0 SPS05 REV52 (51054623)"
             ]
         },   
         "VMName": {
@@ -52,7 +53,7 @@
         },   
         "NetworkName": {
             "type": "string",
-            "defaultValue": "ra-sap-hana-vnet",
+            "defaultValue": "AKL-SAP2021-vnet",
             "metadata": {
                 "description": "The HANA VNET"
             }
@@ -118,6 +119,7 @@
             },
             "defaultValue": "SLES for SAP 12 SP3",
             "allowedValues": [
+                "SLES for SAP 15 SP1",
                 "SLES for SAP 12 SP3",
 		        "SLES for SAP 12 SP2",
                 "RHEL 7.2 for SAP HANA"
@@ -128,7 +130,7 @@
             "metadata": {
                 "description": "SAP HANA System ID"
             },
-            "defaultValue": "H10"
+            "defaultValue": "S4H"
         },
         "HANANumber": {
             "type": "string",
