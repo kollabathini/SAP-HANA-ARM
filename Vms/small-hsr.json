@@ -33,6 +33,7 @@
             },
             "defaultValue": "SLES for SAP 12 SP3",
             "allowedValues": [
+                "SLES for SAP 15 SP1",
                 "SLES for SAP 12 SP3",
                 "SLES for SAP 12 SP2",
                 "RHEL 7.2 for SAP HANA"
@@ -57,7 +58,7 @@
             "metadata": {
                 "description": "SAP HANA System ID"
             },
-            "defaultValue": "H10"
+            "defaultValue": "S4H"
         },
         "hanaNumber": {
             "type": "string",
