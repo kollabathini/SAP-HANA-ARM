@@ -39,10 +39,10 @@
             "value": "YourPassword"
                         },                    
         "OperatingSystem": {
-            "value":  "SLES for SAP 12 SP3"
+            "value":  "SLES for SAP 15 SP1"
         },
         "HANASID": {
-            "value":  "H10"
+            "value":  "S4H"
         },
         "HANANumber": {
             "value": "00"
