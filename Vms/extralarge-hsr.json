@@ -33,10 +33,7 @@
             },
             "defaultValue": "SLES for SAP 12 SP3",
             "allowedValues": [
-                "SLES for SAP 15 SP1",
-                "SLES for SAP 12 SP3",
-                "SLES for SAP 12 SP2",
-                "RHEL 7.2 for SAP HANA"
+                "SLES for SAP 15 SP3"
             ]
         },
         "vmUserName": {
@@ -183,10 +180,9 @@
         "nicName": "[if (equals(parameters('IPAllocationMethod'),'Static'), concat(parameters('vmName1'),'-static'), concat(parameters('vmName1'),'-dynamic'))]",
         "subnetRef": "[parameters('HANASubnetRef')]",
         "OperatingSystemSpec": {
-            "imagePublisher": "[if (contains(parameters('OperatingSystem'),'SLES'),'SUSE','RedHat')]",
-            "imageOffer": "[if (contains(parameters('OperatingSystem'),'SLES'),if (contains(parameters('SubscriptionEmail'),'@'),'SLES-SAP-BYOS','SLES-SAP'),'RHEL-SAP-HANA')]",
-            "sku": "[if (contains(parameters('OperatingSystem'),'12 SP3'),'12-SP3',if (contains(parameters('OperatingSystem'),'12 SP2'),'12-SP2',if (contains(parameters('OperatingSystem'),'15 SP1'),'15-SP1','7.2'))]"
-        },
+            "imagePublisher": "SUSE",
+            "imageOffer": "sles-sap-15-sp3",
+            "sku": "gen2",
         "diskConfig": "[variables(concat('diskConfig_', parameters('vmSize')))]",
         "diskConfig_Standard_M128ms": {
             "shared": 1023,
