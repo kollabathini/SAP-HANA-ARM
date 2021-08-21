@@ -89,7 +89,12 @@ fi
 
 #decode hana version parameter
 HANAVER=${HANAVER^^}
-if [ "${HANAVER}" = "SAP HANA PLATFORM EDITION 2.0 SPS01 REV 10 (51052030)" ]
+if [ "${HANAVER}" = "SAP HANA PLATFORM EDITION 2.0 SPS01 
+
+
+
+
+10 (51052030)" ]
 then
   hanapackage="51052030"
 else
@@ -103,9 +108,9 @@ else
     then
       hanapackage="51053061"
     else
-      if [ "$HANAVER" = "SAP HANA PLATFORM EDITION 2.0 SPS04 REV40 (51053787)" ]
+      if [ "$HANAVER" = "SAP HANA PLATFORM EDITION 2.0 SPS05 REV52 (51054623)" ]
       then
-        hanapackage="51053787"
+        hanapackage="51054623"
       else
         echo "not 51053061, default to 51052325"
         hanapackage="51052325"
