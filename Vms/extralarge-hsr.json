@@ -489,7 +489,7 @@
 				"[resourceId('Microsoft.Compute/disks/', concat(parameters('vmName1'),'-log2'))]"
 			],
 			"properties": {
-				"availabilitySet": "[variables('internalAVSetObj')]",
+				"availabilitySet": "[parameters('avSetObj')]",
 				"hardwareProfile": {
 					"vmSize": "[parameters('vmSize')]"
 				},
