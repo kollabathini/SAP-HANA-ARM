@@ -69,7 +69,7 @@
         "scriptFolder": ".",
         "scriptFileName": "hanastudio.ps1",
         "scriptParameters": "[concat(' -BaseURI ', parameters('customUri'),' -vmname1 ', parameters('vmName1'), ' -vmname2 ', parameters('vmname2'), ' -ipaddress1 ', parameters('StaticIP1'), ' -ipaddress2 ', parameters('StaticIP2'))]",
-        "fileuri": "https://raw.githubusercontent.com/AzureCAT-GSI/SAP-HANA-ARM-HSR/master/hanastudio.ps1"
+        "fileuri": "https://github.com/kollabathini/SAP-HANA-ARM/blob/master/hanastudio.ps1"
     },
     "resources": [
         {
