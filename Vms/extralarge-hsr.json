@@ -584,7 +584,7 @@
 							"lun": 9,
 							"createOption": "Attach",
 							"caching": "None",
-							"writeAcceleratorEnabled": "true",
+							"writeAcceleratorEnabled": "false",
 							"managedDisk": {
 								"id": "[resourceId('Microsoft.Compute/disks/', concat(parameters('vmName1'),'-log1'))]"
 							}
@@ -593,7 +593,7 @@
 							"lun": 10,
 							"createOption": "Attach",
 							"caching": "None",
-							"writeAcceleratorEnabled": "true",
+							"writeAcceleratorEnabled": "false",
 							"managedDisk": {
 								"id": "[resourceId('Microsoft.Compute/disks/', concat(parameters('vmName1'),'-log2'))]"
 							}
